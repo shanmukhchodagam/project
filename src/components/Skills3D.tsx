@@ -21,7 +21,7 @@ const Skills3D = () => {
         { name: "Express", level: 85 },
         { name: "Python", level: 80 },
         { name: "PostgreSQL", level: 82 },
-        { name: "MongoDB", level: 78 },
+        { name: "MongoDB", level: 76 },
       ]
     },
     {
@@ -31,7 +31,7 @@ const Skills3D = () => {
         { name: "Vercel", level: 75 },
         { name: "puppeteer", level: 70 },
         { name: "taiwindcss", level: 85 },
-        { name: "bootstrap", level: 80 },
+        { name: "bootstrap", level: 85 },
       ]
     }
   ];
