@@ -80,7 +80,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Location",
-      value: "AndhraPradesh, India",
+      value: "Andhra Pradesh, India",
       link: "#"
     }
   ];
@@ -102,7 +102,7 @@ const Contact = () => {
       icon: <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />,
       name: "Twitter",
       url: "https://twitter.com",
-      color: "hover:text-blue-400"
+      color: "hover:text-blue-400 "
     }
   ];
 
