@@ -54,7 +54,7 @@ const Projects3D = () => {
       live: "#",
       featured: true,
       gradient: "from-purple-500 to-pink-600",
-      duration: "4 months",
+      duration: " 1 week",
       team: "Solo project",
       role: "Full-Stack Developer & 3D Artist",
       features: [

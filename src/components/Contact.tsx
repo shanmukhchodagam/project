@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Loader2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: 'Shanmukh',
-    email: 'shanmukh_csd@srkrec.edu.in',
-    subject: 'Software Developer',
-    message: 'I am interested in your software developer position.'
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ success: boolean; message: string } | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -18,36 +22,65 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+    
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      setSubmitStatus({ success: false, message: 'Please fill all required fields' });
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,        // Changed from from_name to name
+          email: formData.email,      // Changed from from_email to email
+          subject: formData.subject || 'New message from contact form',
+          message: formData.message,
+          reply_to: formData.email    // Added explicit reply_to
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      setSubmitStatus({
+        success: true,
+        message: 'Your message has been sent successfully! I will get back to you soon.'
+      });
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      setSubmitStatus({
+        success: false,
+        message: 'Failed to send message. Please try again or contact me directly at shanmukhsiva54@gmail.com'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
     {
       icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Email",
-      value: "shanmukh.developer@email.com",
-      link: "mailto:shanmukh.developer@email.com"
+      value: "shanmukhsiva54@gmail.com",
+      link: "mailto:shanmukhsiva54@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 9381758441",
+      link: "tel:+919381758441"
     },
     {
       icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "AndhraPradesh, India",
       link: "#"
     }
   ];
@@ -56,13 +89,13 @@ const Contact = () => {
     {
       icon: <Github className="w-5 h-5 sm:w-6 sm:h-6" />,
       name: "GitHub",
-      url: "https://github.com",
+      url: " https://github.com/shanmukhchodagam/workli.git",
       color: "hover:text-gray-900"
     },
     {
       icon: <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: " https://in.linkedin.com/in/shanmukha-siva-sri-venkatchodagam-6b6b43343",
       color: "hover:text-blue-600"
     },
     {
@@ -134,7 +167,7 @@ const Contact = () => {
                     <motion.a
                       key={index}
                       href={social.url}
-                      className={`w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 transition-all duration-200 hover:bg-gray-200 ${social.color}`}
+                      className={`w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center text-black-600 transition-all duration-200 hover:bg-gray-200 ${social.color}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
@@ -155,6 +188,16 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                {submitStatus && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className={`p-4 rounded-lg ${submitStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}
+                  >
+                    {submitStatus.message}
+                  </motion.div>
+                )}
+                
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -190,7 +233,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject *
+                    Subject
                   </label>
                   <input
                     type="text"
@@ -198,7 +241,6 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    required
                     className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-sm sm:text-base"
                     placeholder="What's this about?"
                   />
@@ -222,12 +264,22 @@ const Contact = () => {
                 
                 <motion.button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center text-sm sm:text-base"
+                  className="w-full bg-blue-600 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center text-sm sm:text-base disabled:opacity-70 disabled:cursor-not-allowed"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
+                  disabled={isSubmitting}
                 >
-                  <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5 mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </motion.button>
               </form>
             </motion.div>
