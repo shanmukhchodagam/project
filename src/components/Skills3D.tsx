@@ -7,38 +7,38 @@ const Skills3D = () => {
     {
       title: "Frontend & 3D",
       skills: [
-        { name: "React", level: 95, color: "from-white-500 to-white-600" },
-        { name: "Three.js", level: 88, color: "from-white-500 to-white-600" },
-        { name: "TypeScript", level: 90, color: "from-white-500 to-white-600" },
-        { name: "Framer Motion", level: 85, color: "from-white-500 to-white-600" },
-        { name: "WebGL", level: 80, color: "from-white-500 to-white-600" },
+        { name: "React", level: 79 },
+        { name: "html & css", level: 90 },
+        { name: "TypeScript", level: 90 },
+        { name: "Javascript", level: 85 },
+        { name: "Angular", level: 80 },
       ]
     },
     {
       title: "Backend & Database",
       skills: [
-        { name: "Node.js", level: 88, color: "from-green-600 to-green-700" },
-        { name: "Express", level: 85, color: "from-gray-600 to-gray-700" },
-        { name: "Python", level: 80, color: "from-yellow-500 to-yellow-600" },
-        { name: "PostgreSQL", level: 82, color: "from-blue-700 to-blue-800" },
-        { name: "MongoDB", level: 78, color: "from-green-700 to-green-800" },
+        { name: "Node.js", level: 88 },
+        { name: "Express", level: 85 },
+        { name: "Python", level: 80 },
+        { name: "PostgreSQL", level: 82 },
+        { name: "MongoDB", level: 78 },
       ]
     },
     {
       title: "Tools & Animation",
       skills: [
-        { name: "Git", level: 90, color: "from-orange-500 to-orange-600" },
-        { name: "Blender", level: 75, color: "from-orange-600 to-red-600" },
-        { name: "AWS", level: 70, color: "from-yellow-600 to-orange-600" },
-        { name: "Figma", level: 85, color: "from-pink-500 to-pink-600" },
-        { name: "GSAP", level: 80, color: "from-green-500 to-teal-500" },
+        { name: "Git", level: 90 },
+        { name: "Vercel", level: 75 },
+        { name: "puppeteer", level: 70 },
+        { name: "taiwindcss", level: 85 },
+        { name: "bootstrap", level: 80 },
       ]
     }
   ];
 
   return (
     <section id="skills" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      {/* Parallax Background */}
+      {/* Parallax Background (unchanged) */}
       <ParallaxSection speed={0.4} className="absolute inset-0">
         <div className="absolute top-20 sm:top-40 left-10 sm:left-20 w-36 h-36 sm:w-72 sm:h-72 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 sm:bottom-40 right-10 sm:right-20 w-32 h-32 sm:w-64 sm:h-64 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl"></div>
@@ -102,12 +102,20 @@ const Skills3D = () => {
                       <div className="relative">
                         <div className="w-full bg-white/20 rounded-full h-2.5 sm:h-3 overflow-hidden">
                           <motion.div
-                            className={`h-full bg-gradient-to-r ${skill.color} rounded-full shadow-lg`}
-                            initial={{ width: 0 }}
-                            whileInView={{ width: `${skill.level}%` }}
-                            transition={{ duration: 1.5, delay: (categoryIndex * 0.2) + (skillIndex * 0.1) + 0.5 }}
-                            viewport={{ once: true }}
-                          />
+  className="h-full bg-gradient-to-r from-white to-gray-200 rounded-full"
+  initial={{ width: 0 }}
+  whileInView={{ width: `${skill.level}%` }}
+  transition={{ duration: 1.5, delay: (categoryIndex * 0.2) + (skillIndex * 0.1) + 0.5 }}
+  viewport={{ once: true }}
+  style={{
+    boxShadow: `
+      0 0 8px rgba(255, 255, 255, 0.8),
+      0 0 16px rgba(255, 255, 255, 0.6),
+      0 0 24px rgba(255, 255, 255, 0.4)
+    `,
+    filter: 'brightness(10.1)'
+  }}
+/>
                         </div>
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-full animate-shimmer"></div>
                       </div>
@@ -122,5 +130,4 @@ const Skills3D = () => {
     </section>
   );
 };
-
-export default Skills3D;
+export default Skills3D;     
