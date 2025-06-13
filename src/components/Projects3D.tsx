@@ -10,39 +10,39 @@ const Projects3D = () => {
 
   const projects = [
     {
-      title: "3D E-Commerce Experience",
-      description: "An immersive shopping platform with 3D product visualization, AR try-on features, and interactive product configurators that revolutionize online shopping.",
-      longDescription: "A cutting-edge e-commerce platform that transforms online shopping through immersive 3D product visualization and augmented reality features. This project showcases the future of retail by allowing customers to interact with products in three-dimensional space, try them on virtually, and customize them in real-time.",
-      image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Three.js", "WebXR", "Node.js", "WebGL", "MongoDB", "Express"],
-      icon: <ShoppingCart className="w-4 h-4 sm:w-6 sm:h-6" />,
-      github: "#",
-      live: "#",
-      featured: true,
-      gradient: "from-blue-500 to-purple-600",
-      duration: "6 months",
-      team: "5 developers",
-      role: "Lead Frontend Developer",
-      features: [
-        "360° product visualization with zoom and rotation",
-        "AR try-on functionality using WebXR",
-        "Real-time product customization",
-        "Interactive 3D product configurator",
-        "Seamless checkout integration",
-        "Mobile-optimized 3D rendering"
-      ],
-      challenges: [
-        "Optimizing 3D models for web performance while maintaining visual quality",
-        "Implementing cross-platform AR compatibility",
-        "Creating intuitive 3D navigation controls for all devices"
-      ],
-      results: [
-        "40% increase in user engagement",
-        "25% reduction in product returns",
-        "60% improvement in conversion rates",
-        "Featured in TechCrunch as innovative retail solution"
-      ]
-    },
+    title: "Smart Wash Website",
+    description: "An efficient and eco-friendly laundry & dry cleaning service platform developed for a student-led startup.",
+    longDescription: "Excited to share our work on Smart Wash – a laundry and dry cleaning service startup run by students! As SRKR CSD 2nd-year students, we built this platform to provide users with a seamless, eco-friendly laundry experience. It includes features like scheduling pickups, real-time updates, and a responsive design tailored for ease of use.",
+    image: "https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg?auto=compress&cs=tinysrgb&w=600", // You can replace with a Smart Wash-specific image if available
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
+    github: "#", // Replace with actual GitHub repo if public
+    live: "https://bosmartwash.in/",
+    featured: true,
+    gradient: "from-cyan-500 to-blue-600",
+    duration: "2 months",
+    team: "4 developers",
+    role: "Web Developer",
+    features: [
+      "Pickup scheduling system",
+      "User-friendly responsive design",
+      "Service selection and order tracking",
+      "Contact and feedback section",
+      "Eco-friendly service messaging",
+      "Seamless navigation"
+    ],
+    challenges: [
+      "Integrating order scheduling with a clean UX",
+      "Designing for performance on all devices",
+      "Testing and debugging in live environment"
+    ],
+    results: [
+      "Successfully launched during SRKR campus event",
+      "Positive feedback from early users",
+      "Improved digital visibility for the startup",
+      "Valuable hands-on web dev experience for the team"
+    ]
+  },
     {
       title: "Interactive 3D Portfolio",
       description: "A stunning portfolio website featuring 3D animations, particle systems, and immersive storytelling that showcases creative work in an engaging way.",
@@ -77,40 +77,41 @@ const Projects3D = () => {
         "1000+ developer stars on GitHub"
       ]
     },
-    {
-      title: "VR Meeting Platform",
-      description: "A virtual reality meeting space with spatial audio, 3D avatars, and collaborative tools that brings remote teams together in immersive environments.",
-      longDescription: "A revolutionary virtual reality platform designed for remote collaboration, featuring realistic 3D environments, spatial audio, and intuitive collaboration tools that make virtual meetings feel natural and engaging.",
-      image: "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["WebXR", "Three.js", "Socket.io", "WebRTC", "A-Frame", "Node.js"],
-      icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
-      github: "#",
-      live: "#",
-      featured: false,
-      gradient: "from-green-500 to-teal-600",
-      duration: "8 months",
-      team: "8 developers",
-      role: "VR/AR Specialist",
-      features: [
-        "Cross-platform VR compatibility",
-        "Spatial audio with 3D positioning",
-        "Customizable 3D avatars",
-        "Virtual whiteboard and presentation tools",
-        "Screen sharing in 3D space",
-        "Real-time collaboration features"
-      ],
-      challenges: [
-        "Ensuring low latency for real-time VR interactions",
-        "Creating intuitive VR user interfaces",
-        "Optimizing for various VR headsets and capabilities"
-      ],
-      results: [
-        "Reduced meeting fatigue by 50%",
-        "Increased team collaboration scores",
-        "Adopted by 100+ remote companies",
-        "Patent pending for spatial meeting technology"
-      ]
-    },
+  {
+  title: "SIGMA 2K25 Tech Fest Website",
+  description: "An interactive website for SIGMA 2K25, the annual tech fest of CSD and CSIT at SRKR Engineering College, showcasing events, galleries, and registration.",
+  longDescription: " Excited to announce that I and Likhitha noupada have successfully built a dynamic website for SIGMA 2K25 – the annual tech fest of CSD and CSIT at SRKR Engineering College! SIGMA 2K25 celebrates innovation through workshops, competitions, and tech talks. The platform we built offers smooth registration flows, stunning gallery visuals, and complete event details, giving users a seamless experience.",
+  image: "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=600", // Optional: replace with actual SIGMA 2K25 image if available
+  technologies: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
+  icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
+  github: "#", // Replace with actual GitHub repo if available
+  live: "https://lnkd.in/gv6HXGkm",
+  featured: true,
+  gradient: "from-yellow-500 to-orange-600",
+  duration: "1 month",
+  team: "2 developers",
+  role: "Frontend Developer",
+  features: [
+    "Interactive event registration system",
+    "Smooth, responsive UI with animations",
+    "Tech event schedule and descriptions",
+    "Gallery showcasing highlights",
+    "Mobile-friendly design",
+    "Dynamic updates for event information"
+  ],
+  challenges: [
+    "Delivering a high-performance UI under tight deadlines",
+    "Capturing the festival's energy in the design",
+    "Ensuring scalability for high user traffic during launch"
+  ],
+  results: [
+    "Successfully launched for SRKR’s biggest fest",
+    "Used by hundreds of students for event registration",
+    "Highly appreciated by faculty and fest attendees",
+    "Strengthened frontend development and teamwork skills"
+  ]
+}
+,
     {
       title: "3D Data Visualization",
       description: "An interactive data visualization platform that transforms complex datasets into beautiful 3D representations with real-time updates and smooth animations.",
