@@ -7,11 +7,11 @@ const Skills3D = () => {
     {
       title: "Frontend & 3D",
       skills: [
-        { name: "React", level: 95, color: "from-blue-500 to-blue-600" },
-        { name: "Three.js", level: 88, color: "from-green-500 to-green-600" },
-        { name: "TypeScript", level: 90, color: "from-blue-600 to-indigo-600" },
-        { name: "Framer Motion", level: 85, color: "from-purple-500 to-purple-600" },
-        { name: "WebGL", level: 80, color: "from-red-500 to-red-600" },
+        { name: "React", level: 95, color: "from-white-500 to-white-600" },
+        { name: "Three.js", level: 88, color: "from-white-500 to-white-600" },
+        { name: "TypeScript", level: 90, color: "from-white-500 to-white-600" },
+        { name: "Framer Motion", level: 85, color: "from-white-500 to-white-600" },
+        { name: "WebGL", level: 80, color: "from-white-500 to-white-600" },
       ]
     },
     {
