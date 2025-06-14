@@ -57,7 +57,7 @@ const Contact = () => {
       console.error('Email sending failed:', error);
       setSubmitStatus({
         success: false,
-        message: 'Failed to send message. Please try again or contact me directly at shanmukhsiva54@gmail.com'
+        message: 'Failed to send message. Please try again or contact me directly on shanmukhsiva54@gmail.com'
       });
     } finally {
       setIsSubmitting(false);
