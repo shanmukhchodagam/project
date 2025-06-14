@@ -136,7 +136,7 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">
-                Let's start a conversation
+                Let's start a convo
               </h3>
               
               <div className="space-y-6 sm:space-y-8 mb-8 sm:mb-12">

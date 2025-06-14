@@ -12,6 +12,7 @@ import FloatingElements from './components/FloatingElements';
 import Loading from './components/Loading';
 import BubbleTransition from './components/BubbleTransition';
 
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [showTransition, setShowTransition] = useState(false);
@@ -46,6 +47,7 @@ function App() {
         <Hero3D />
         <About3D />
         <Skills3D />
+       
         <Projects3D />
         <Experience />
         <Education />
