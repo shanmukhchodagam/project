@@ -82,15 +82,15 @@ const About3D = () => {
               className="order-2 lg:order-1"
             >
               <h3 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6">
-  Passionate Developer with 5+ Years of Experience
+  Passionate Developer with 2 Years of Experience
 </h3>
               <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
-                Hello! I'm Shanmukh, a full-stack developer based in San Francisco who specializes in 
+                Hello! I'm Shanmukh, a full-stack developer, who specializes in 
                 creating immersive 3D web experiences and modern applications that push the 
                 boundaries of what's possible on the web.
               </p>
               <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
-                My journey began in 2019, and since then I've evolved from traditional web 
+                My journey began in 2021, and since then I've evolved from traditional web 
                 development to incorporating cutting-edge 3D graphics, animations, and interactive 
                 experiences that captivate users and deliver exceptional results.
               </p>
