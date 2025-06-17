@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Download, Palette } from 'lucide-react';
 import { useMousePosition } from '../hooks/useParallax';
 import ParallaxSection from './ParallaxSection';
+import { useNavigate } from 'react-router-dom';
 import profileImage from '../assets/profile.jpg';
+import PageTransition from './transitions/PageTransition';
 
 const Hero3D = () => {
   const mousePosition = useMousePosition();
+  const navigate = useNavigate();
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
@@ -15,7 +19,16 @@ const Hero3D = () => {
     }
   };
 
+  const navigateToPersonal = () => {
+    setIsTransitioning(true);
+    // Wait for the fade to black to complete before navigating
+    setTimeout(() => {
+      navigate('/personal');
+    }, 500);
+  };
+
   return (
+    <PageTransition isTransitioning={isTransitioning}>
     <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.1)_1px,transparent_1px)] bg-[size:30px_30px] sm:bg-[size:50px_50px] animate-pulse"></div>
@@ -124,7 +137,24 @@ const Hero3D = () => {
       </span>
     </motion.button>
     
-    {/* Social links and download button moved to the main section above */}
+    <motion.button 
+      className="group px-5 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold shadow-xl transform-gpu transition-all duration-300 text-sm sm:text-base"
+      whileHover={{ 
+        scale: 1.05,
+        rotateX: 5,
+        rotateY: 5,
+        boxShadow: "0 15px 30px rgba(236, 72, 153, 0.4)"
+      }}
+      whileTap={{ scale: 0.95 }}
+      style={{ transformStyle: 'preserve-3d' }}
+      onClick={navigateToPersonal}
+      disabled={isTransitioning}
+    >
+      <span className="flex items-center justify-center">
+        View Personal
+        <Palette className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:rotate-12 transition-transform" />
+      </span>
+    </motion.button>
   </motion.div>
 
   <motion.div 
@@ -196,9 +226,8 @@ const Hero3D = () => {
           </div>
         </div>
       </div>
-
-      {/* Social links and download button moved to the main section above */}
     </section>
+    </PageTransition>
   );
 };
 

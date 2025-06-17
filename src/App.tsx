@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero3D from './components/Hero3D';
 import About3D from './components/About3D';
@@ -11,9 +12,9 @@ import Footer from './components/Footer';
 import FloatingElements from './components/FloatingElements';
 import Loading from './components/Loading';
 import BubbleTransition from './components/BubbleTransition';
+import PersonalPortfolio from './pages/personal_port';
 
-
-function App() {
+const ProfessionalPortfolio = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showTransition, setShowTransition] = useState(false);
 
@@ -47,7 +48,6 @@ function App() {
         <Hero3D />
         <About3D />
         <Skills3D />
-       
         <Projects3D />
         <Experience />
         <Education />
@@ -55,6 +55,17 @@ function App() {
       </main>
       <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<ProfessionalPortfolio />} />
+        <Route path="/personal" element={<PersonalPortfolio />} />
+      </Routes>
+    </Router>
   );
 }
 
