@@ -18,7 +18,7 @@ const Projects3D = () => {
     description: "An efficient and eco-friendly laundry & dry cleaning service platform developed for a student-led startup.",
     longDescription: "Excited to share our work on Smart Wash – a laundry and dry cleaning service startup run by students! As SRKR CSD 2nd-year students, we built this platform to provide users with a seamless, eco-friendly laundry experience. It includes features like scheduling pickups, real-time updates, and a responsive design tailored for ease of use.",
     image: smawash , // You can replace with a Smart Wash-specific image if available
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    technologies: ["Html", "Css", "Javascript", "Whatsapp integration"],
     icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
     github: "#", // Replace with actual GitHub repo if public
     live: "https://bosmartwash.in/",
