@@ -57,7 +57,7 @@ const Footer = () => {
                 className="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm sm:text-base break-all inline-block"
                 whileHover={{ scale: 1.02 }}
               >
-                shanmukh.developer@email.com
+                shanmukhsiva54@gmail.com
               </motion.a>
             </motion.div>
           </div>
@@ -71,10 +71,10 @@ const Footer = () => {
           >
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-                © 2024 shanmukh Developer. All rights reserved.
+                © 2025 shanmukh chodagam. All rights reserved.
               </p>
               <p className="text-gray-400 text-xs sm:text-sm flex items-center">
-                Made with <Heart className="w-3 h-3 sm:w-4 sm:h-4 mx-1 text-red-500 animate-pulse" /> and lots of coffee
+                Made with <Heart className="w-3 h-3 sm:w-4 sm:h-4 mx-1 text-red-500 animate-pulse" /> and lots of effort
               </p>
             </div>
           </motion.div>

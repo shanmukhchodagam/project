@@ -131,7 +131,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                       <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2 sm:mr-3" />
                       <div>
                         <p className="text-xs sm:text-sm text-gray-500">Duration</p>
-                        <p className="font-semibold text-gray-900 text-sm sm:text-base">{project.duration}</p>
+                       <p className="font-semibold text-black text-sm sm:text-base">{project.duration}</p>
+
                       </div>
                     </div>
                   )}
@@ -140,7 +141,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                       <Users className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 mr-2 sm:mr-3" />
                       <div>
                         <p className="text-xs sm:text-sm text-gray-500">Team Size</p>
-                        <p className="font-semibold text-gray-900 text-sm sm:text-base">{project.team}</p>
+                        <p className="font-semibold text-black text-sm sm:text-base">{project.team}</p>
                       </div>
                     </div>
                   )}
@@ -149,7 +150,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                       <Award className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600 mr-2 sm:mr-3" />
                       <div>
                         <p className="text-xs sm:text-sm text-gray-500">My Role</p>
-                        <p className="font-semibold text-gray-900 text-sm sm:text-base">{project.role}</p>
+                        <p className="font-semibold text-black text-sm sm:text-base">{project.role}</p>
                       </div>
                     </div>
                   )}

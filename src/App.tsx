@@ -12,8 +12,8 @@ import Footer from './components/Footer';
 import FloatingElements from './components/FloatingElements';
 import Loading from './components/Loading';
 import BubbleTransition from './components/BubbleTransition';
-import PersonalPortfolio from './pages/personal_port';
-
+import PersonalPortfolio, { working } from './pages/personal_port'; // Single import
+import Underdevelopment from './components/Underdevelopment'; // Add this component
 const ProfessionalPortfolio = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showTransition, setShowTransition] = useState(false);
@@ -63,8 +63,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ProfessionalPortfolio />} />
-        <Route path="/personal" element={<PersonalPortfolio />} />
-      </Routes>
+        <Route 
+          path="/personal" 
+          element={working ? <Underdevelopment /> : <PersonalPortfolio />} 
+        />
+      </Routes> {/* This closing tag was missing */}
     </Router>
   );
 }

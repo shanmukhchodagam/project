@@ -156,13 +156,13 @@ const Projects = () => {
                       <div className="text-blue-600 mr-3">
                         {project.icon}
                       </div>
-                      <h4 className="text-xl font-bold text-gray-900">
-                        {project.title}
-                      </h4>
-                    </div>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
-                      {project.description}
-                    </p>
+                     <h4 className="text-xl font-bold text-gray-800">  {/* Changed from text-black-900 to text-gray-800 */}
+  {project.title}
+</h4>
+</div>
+<p className="text-gray-700 mb-4 leading-relaxed">  {/* Changed from text-gray-600 to text-gray-700 */}
+  {project.description}
+</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech, techIndex) => (
                         <span

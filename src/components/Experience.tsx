@@ -13,44 +13,78 @@ const Experience = () => {
   // Transform scroll progress to dot position
   const dotY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
-  const experiences = [
+ const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      description: "Leading frontend development for enterprise applications, mentoring junior developers, and implementing modern React patterns with TypeScript.",
+      title: "Streaming Coordinator",
+      company: "Bhimavaram Open",
+      location: "Bhimavaram",
+      duration: "Not specified",
+      description: "Managed live streaming setup for tennis tournaments using OBS software and oversaw social media engagement.",
       achievements: [
-        "Improved application performance by 40% through code optimization",
-        "Led migration from JavaScript to TypeScript across 5 major projects",
-        "Mentored 4 junior developers and established best practices"
+        "Ensured efficient use of limited resources for live streaming",
+        "Facilitated social media engagement and filmed match events",
+        "Received honor award for tech support"
       ]
     },
     {
-      title: "Full Stack Developer",
-      company: "StartupXYZ",
+      title: "Full Stack Web Developer",
+      company: "BO Smart Wash",
+      location: "Andhra Pradesh",
+      duration: "Not specified",
+      description: "Developed web applications and collaborated with other developers to improve usability and functionality.",
+      achievements: [
+        "Built applications using HTML, CSS, and JavaScript",
+        "Contributed ideas to enhance web application interfaces",
+        "Participated in code reviews and bug fixes"
+      ]
+    },
+    {
+      title: "Web Developer",
+      company: "SIGMA fest website",
+      location: "SRKR Engineering College",
+      duration: "Not specified",
+      description: "Created a Squid Game-themed website for the Sigma 2K25 fest, enabling event registrations and showcasing fest highlights.",
+      achievements: [
+        "Developed the site using HTML, CSS, and JavaScript",
+        "Hosted the site via WinSCP for campus-wide access",
+        "Ensured smooth event registrations and user experience"
+      ]
+    },
+    {
+      title: "Contributor",
+      company: "Social Summer of Code (SSOC) Season 4",
+      location: "Open-source (Remote)",
+      duration: "2025",
+      description: "Contributed to EventMapper, an open-source project, collaborating with a global developer community.",
+      achievements: [
+        "Used HTML, CSS, JavaScript, and Firebase",
+        "Built real-world solutions as part of SSOC 2025"
+      ]
+    },
+    {
+      title: "C Programming Mentor",
+      company: "SRKR Engineering College",
+      location: "Bhimavaram",
+      duration: "2024-25",
+      description: "Educated learners on C programming and organized team-building events.",
+      achievements: [
+        "Enhanced team morale and working relationships",
+        "Provided guidance on C programming concepts"
+      ]
+    },
+    {
+      title: "React Developer (Personal Project)",
+      company: "Personal Portfolio",
       location: "Remote",
-      duration: "2020 - 2022",
-      description: "Built scalable web applications from scratch using modern stack including React, Node.js, and PostgreSQL. Collaborated with design team to create exceptional user experiences.",
+      duration: "2025",
+      description: "Built a fully responsive, interactive portfolio using React, TypeScript, Three.js, and EmailJS to showcase skills and projects.",
       achievements: [
-        "Developed 3 major features that increased user engagement by 60%",
-        "Reduced server response time by 35% through API optimization",
-        "Implemented automated testing that caught 90% of bugs before production"
-      ]
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
-      location: "New York, NY",
-      duration: "2019 - 2020",
-      description: "Created responsive websites and web applications for various clients. Worked closely with designers to implement pixel-perfect designs and ensure cross-browser compatibility.",
-      achievements: [
-        "Delivered 20+ client projects on time and within budget",
-        "Achieved 99% client satisfaction rate",
-        "Reduced development time by 25% through component reusability"
+        "Implemented parallax effects and 3D visuals with Three.js",
+        "Enabled direct email communication via EmailJS integration",
+        "Designed with a focus on UI/UX and mobile responsiveness"
       ]
     }
-  ];
+];
 
   return (
     <section ref={sectionRef} id="experience" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative overflow-hidden">
@@ -76,8 +110,7 @@ const Experience = () => {
             </h2>
             <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6 sm:mb-8"></div>
             <p className="text-blue-200 max-w-2xl mx-auto text-base sm:text-lg">
-              My professional journey in web development, where I've grown from a 
-              junior developer to a senior role, leading projects and teams.
+              My journey in web development blends technical expertise with creative problem-solving. From building dynamic e-commerce apps in Angular to contributing to open-source projects with Firebase, I thrive on crafting scalable, user-centric solutions. As a mentor and team collaborator, I enjoy sharing knowledge while pushing the boundaries of modern web tech—whether through live streaming innovation at Bhimavaram Open or designing immersive portfolios with Three.js.
             </p>
           </motion.div>
           

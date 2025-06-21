@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Palette, Zap, Users, Award, Coffee } from 'lucide-react';
 import ParallaxSection from './ParallaxSection';
-
+import resumeFile from '../assets/resume.pdf';
 const About3D = () => {
   const highlights = [
     {
@@ -31,11 +31,12 @@ const About3D = () => {
     }
   ];
 
-  const stats = [
-    { number: "50+", label: "Projects Completed", icon: Award },
-    { number: "5+", label: "Years Experience", icon: Code },
-    { number: "∞", label: "Cups of Coffee", icon: Coffee },
-  ];
+ const stats = [
+  { number: "10", label: "Porjects Built", icon: Award },
+  { number: "6", label: "Certifications Earned", icon: Code },
+  { number: "300+", label: "Hours Coding", icon: Coffee },
+];
+
 
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
@@ -73,78 +74,85 @@ const About3D = () => {
             <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6 sm:mb-8"></div>
           </motion.div>
           
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="order-2 lg:order-1"
-            >
-              <h3 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6">
-  Passionate Developer with 2 Years of Experience
-</h3>
-              <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
-                Hello! I'm Shanmukh, a full-stack developer, who specializes in 
-                creating immersive 3D web experiences and modern applications that push the 
-                boundaries of what's possible on the web.
-              </p>
-              <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
-                My journey began in 2021, and since then I've evolved from traditional web 
-                development to incorporating cutting-edge 3D graphics, animations, and interactive 
-                experiences that captivate users and deliver exceptional results.
-              </p>
-              <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
-                When I'm not crafting digital experiences, you'll find me exploring new 3D 
-                technologies, contributing to open-source projects, or experimenting with 
-                the latest in web animation frameworks.
-              </p>
-              
-              <div className="flex flex-wrap gap-2 sm:gap-3">
-                {["React & Next.js", "Three.js & WebGL", "TypeScript", "Framer Motion", "Node.js", "3D Animation"].map((skill, index) => (
-                  <motion.span
-                    key={index}
-                    className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium"
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    {skill}
-                  </motion.span>
-                ))}
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 order-1 lg:order-2"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              {highlights.map((highlight, index) => (
-                <motion.div
-                  key={index}
-                  className={`p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform-gpu`}
-                  whileHover={{ 
-                    scale: 1.05,
-                    rotateY: 5,
-                    rotateX: 5,
-                  }}
-                  style={{ transformStyle: 'preserve-3d' }}
-                >
-                  <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${highlight.color} rounded-lg sm:rounded-xl flex items-center justify-center text-white mb-3 sm:mb-4 shadow-lg`}>
-                    {highlight.icon}
-                  </div>
-                  <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
-                    {highlight.title}
-                  </h4>
-                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    {highlight.description}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
+    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    className="order-2 lg:order-1"
+  >
+    <h3 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6">
+      Full Stack Web Developer with Hands-On Project Experience
+    </h3>
+
+    <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
+      Hello! I'm Shanmukh, a full-stack web developer skilled in building scalable web applications using React, Angular, TypeScript, and PHP. I focus on writing clean, efficient code and bringing real-world projects to life—from e-commerce platforms to productivity tools.
+    </p>
+
+    <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
+      My journey began in 2021, and since then I've grown from building static websites to developing full-fledged web applications using modern frameworks like React, Angular, and Django. I've worked on real-world projects like M-Cart, a feature-rich e-commerce platform, and internal tools for student and team management.
+    </p>
+    <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
+      When I'm not building applications, I'm exploring backend systems, improving my problem-solving skills on LeetCode, or learning new tools to stay ahead in the ever-evolving world of web development.
+    </p>
+
+    {/* Download Resume Button */}
+  <motion.a
+  href={resumeFile}
+  download="Shanmukh_Resume.pdf" // This will be the filename when downloaded
+  className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 mb-6"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  Download Resume
+</motion.a>
+
+    <div className="flex flex-wrap gap-2 sm:gap-3">
+      {["React & Next.js", "Three.js & WebGL", "TypeScript", "PHP", "Node.js & ExpressJs", "MySql & Firebase"].map((skill, index) => (
+        <motion.span
+          key={index}
+          className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium"
+          whileHover={{ scale: 1.05, y: -2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          {skill}
+        </motion.span>
+      ))}
+    </div>
+  </motion.div>
+  
+  <motion.div 
+    className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 order-1 lg:order-2"
+    initial={{ opacity: 0, x: 50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+    viewport={{ once: true }}
+  >
+    {highlights.map((highlight, index) => (
+      <motion.div
+        key={index}
+        className={`p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform-gpu`}
+        whileHover={{ 
+          scale: 1.05,
+          rotateY: 5,
+          rotateX: 5,
+        }}
+        style={{ transformStyle: 'preserve-3d' }}
+      >
+        <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${highlight.color} rounded-lg sm:rounded-xl flex items-center justify-center text-white mb-3 sm:mb-4 shadow-lg`}>
+          {highlight.icon}
+        </div>
+        <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+          {highlight.title}
+        </h4>
+        <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+          {highlight.description}
+        </p>
+      </motion.div>
+    ))}
+  </motion.div>
+</div>
 
           {/* 3D Stats Section */}
           <motion.div 

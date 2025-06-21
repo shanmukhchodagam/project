@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, Zap, Palette, ShoppingCart, Cuboid as Cube } from 'lucide-react';
 import ParallaxSection from './ParallaxSection';
 import ProjectModal from './ProjectModal';
+import tennis from '../assets/tennis.png';
+import smawash from '../assets/smawash.png';
+import pof from '../assets/pof.png';
+import sigma2k25 from '../assets/sigma2k25.png';
 
 const Projects3D = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -13,7 +17,7 @@ const Projects3D = () => {
     title: "Smart Wash Website",
     description: "An efficient and eco-friendly laundry & dry cleaning service platform developed for a student-led startup.",
     longDescription: "Excited to share our work on Smart Wash – a laundry and dry cleaning service startup run by students! As SRKR CSD 2nd-year students, we built this platform to provide users with a seamless, eco-friendly laundry experience. It includes features like scheduling pickups, real-time updates, and a responsive design tailored for ease of use.",
-    image: "https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg?auto=compress&cs=tinysrgb&w=600", // You can replace with a Smart Wash-specific image if available
+    image: smawash , // You can replace with a Smart Wash-specific image if available
     technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
     github: "#", // Replace with actual GitHub repo if public
@@ -47,47 +51,46 @@ const Projects3D = () => {
       title: "Interactive 3D Portfolio",
       description: "A stunning portfolio website featuring 3D animations, particle systems, and immersive storytelling that showcases creative work in an engaging way.",
       longDescription: "An award-winning portfolio website that pushes the boundaries of web design through innovative 3D animations and interactive storytelling. This project demonstrates advanced WebGL techniques and creative user experience design.",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Three.js", "Framer Motion", "GSAP", "WebGL", "Blender"],
+      image: pof,
+      technologies: ["React", "Three.js","TypeScript","EmailJs","framer-motion"],
       icon: <Cube className="w-4 h-4 sm:w-6 sm:h-6" />,
-      github: "#",
+      github: "https://github.com/shanmukhchodagam/project",
       live: "#",
       featured: true,
-      gradient: "from-purple-500 to-pink-600",
+    gradient: "from-cyan-500 to-blue-600",
       duration: " 1 week",
       team: "Solo project",
       role: "Full-Stack Developer & 3D Artist",
       features: [
-        "Immersive 3D scene navigation",
-        "Interactive particle systems",
-        "Smooth scroll-triggered animations",
-        "Dynamic lighting effects",
-        "Responsive 3D layouts",
-        "Custom shader effects"
-      ],
-      challenges: [
-        "Balancing visual complexity with performance across devices",
-        "Creating smooth transitions between 3D scenes",
-        "Optimizing particle systems for mobile devices"
-      ],
-      results: [
-        "Won Awwwards Site of the Day",
-        "95% performance score on mobile",
-        "Featured in CSS Design Awards",
-        "1000+ developer stars on GitHub"
-      ]
+  "Email integration using EmailJS for contact forms",
+  "Dynamic data handling with React state and props",
+  "Responsive layouts across devices",
+  "Form validation and user feedback mechanisms",
+  "API consumption for live data rendering",
+  "Smooth scroll-triggered animations"
+],
+challenges: [
+  "Deploying applications securely with environment variables and API keys",
+  "Integrating third-party services like EmailJS in a production-ready app",
+  "Debugging cross-platform layout inconsistencies"
+],
+results: [
+  "Deployed on GitHub Pages with optimized build",
+  "Received positive feedback from mentors and peers",
+  "Improved understanding of API integration and deployment workflows"
+]
     },
   {
   title: "SIGMA 2K25 Tech Fest Website",
   description: "An interactive website for SIGMA 2K25, the annual tech fest of CSD and CSIT at SRKR Engineering College, showcasing events, galleries, and registration.",
   longDescription: " Excited to announce that I and Likhitha noupada have successfully built a dynamic website for SIGMA 2K25 – the annual tech fest of CSD and CSIT at SRKR Engineering College! SIGMA 2K25 celebrates innovation through workshops, competitions, and tech talks. The platform we built offers smooth registration flows, stunning gallery visuals, and complete event details, giving users a seamless experience.",
-  image: "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=600", // Optional: replace with actual SIGMA 2K25 image if available
+  image: sigma2k25, // Optional: replace with actual SIGMA 2K25 image if available
   technologies: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
   icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
   github: "#", // Replace with actual GitHub repo if available
-  live: "https://lnkd.in/gv6HXGkm",
+  live: "https://srkrec.edu.in/sigma/#WebDevelopment",
   featured: true,
-  gradient: "from-yellow-500 to-orange-600",
+    gradient: "from-cyan-500 to-blue-600",
   duration: "1 month",
   team: "2 developers",
   role: "Frontend Developer",
@@ -113,37 +116,36 @@ const Projects3D = () => {
 }
 ,
     {
-      title: "3D Data Visualization",
-      description: "An interactive data visualization platform that transforms complex datasets into beautiful 3D representations with real-time updates and smooth animations.",
-      longDescription: "A sophisticated data visualization platform that brings complex datasets to life through interactive 3D representations, making data analysis more intuitive and engaging for business intelligence applications.",
-      image: "https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["D3.js", "Three.js", "React", "WebGL", "Chart.js", "Python"],
-      icon: <Palette className="w-4 h-4 sm:w-6 sm:h-6" />,
+      title: "Live Streaming – Bhimavaram Open",
+  description: "Managed OBS-based live streaming and filming for a regional tennis tournament with limited hardware.",
+  longDescription: "As Streaming Coordinator for Bhimavaram Open, I led the setup and management of live streaming using OBS, filmed match events, and handled real-time tech adjustments. Despite hardware constraints, I ensured uninterrupted streams and drove engagement through active social media coordination.",
+  image: tennis,
+     technologies: ["OBS Studio", "YouTube Live", "Instagram", "Mobile Filming", "Basic Video Editing"],
+  icon: <Palette className="w-4 h-4 sm:w-6 sm:h-6" />,
       github: "#",
-      live: "#",
+      live: "https://www.youtube.com/@BhimavaramDigitals",
       featured: false,
-      gradient: "from-orange-500 to-red-600",
-      duration: "5 months",
-      team: "4 developers",
-      role: "Data Visualization Lead",
+      gradient: "from-blue-600 to-indigo-700",
+      duration: "2 weeks",
+      team: "4 members",
+      role: "Streaming Coordinator",
       features: [
-        "Interactive 3D scatter plots and networks",
-        "Real-time data streaming and updates",
-        "Customizable visualization themes",
-        "Export capabilities for presentations",
-        "Multi-dimensional data filtering",
-        "Collaborative annotation tools"
+        "Live match streaming using OBS",
+    "Filming match events and audience reactions",
+    "Real-time social media updates and posts",
+    "Tech setup and audio-video troubleshooting",
+    "Optimized stream settings for limited hardware"
       ],
       challenges: [
-        "Rendering large datasets without performance loss",
-        "Creating intuitive 3D navigation for data exploration",
-        "Maintaining visual clarity with complex data relationships"
+        "Managing stream quality on low-spec machines",
+    "Setting up outdoor streaming with unstable networks",
+    "Balancing streaming, filming, and event coordination"
       ],
       results: [
-        "30% faster data analysis workflows",
-        "Improved decision-making accuracy",
-        "Adopted by Fortune 500 companies",
-        "Reduced training time for new analysts"
+        "Successfully streamed over 20 matches live",
+    "Boosted Instagram visibility during the tournament",
+    "Recognized by organizers for efficient coordination",
+    "Gained hands-on expertise in event-based live streaming"
       ]
     }
   ];
@@ -428,13 +430,14 @@ const Projects3D = () => {
                         <div className={`w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r ${project.gradient} rounded-lg flex items-center justify-center text-white mr-3 shadow-lg`}>
                           {project.icon}
                         </div>
-                        <h4 className="text-lg sm:text-xl font-bold text-gray-900">
-                          {project.title}
-                        </h4>
-                      </div>
-                      <p className="text-gray-600 mb-4 leading-relaxed text-sm sm:text-base">
-                        {project.description}
-                      </p>
+                     <h4 className="text-lg sm:text-xl font-bold text-black">
+  {project.title}
+</h4>
+</div>
+<p className="text-gray-800 mb-4 leading-relaxed text-sm sm:text-base">
+
+  {project.description}
+</p>
                       <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                         {project.technologies.slice(0, 3).map((tech, techIndex) => (
                           <span

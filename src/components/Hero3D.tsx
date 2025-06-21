@@ -103,13 +103,14 @@ const Hero3D = () => {
     transition={{ duration: 1, delay: 0.4 }}
     className="mb-6 sm:mb-8"
   >
-    <p className="text-lg sm:text-xl md:text-2xl text-blue-200 mb-3 sm:mb-4 font-light">
-      Full-Stack Developer & 3D Experience Creator
-    </p>
-    <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-lg sm:max-w-xl mx-auto leading-relaxed">
-      Crafting immersive digital experiences with cutting-edge technologies, 
-      beautiful animations, and pixel-perfect design.
-    </p>
+   <p className="text-lg sm:text-xl md:text-2xl text-blue-200 mb-3 sm:mb-4 font-light">
+  Full-Stack Web Developer | MERN Stack, SQL/NoSQL & API Integration
+</p>
+<p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-lg sm:max-w-xl mx-auto leading-relaxed">
+  Building reliable, scalable web applications with clean backend logic, RESTful APIs, and robust databases — optimized for performance and real-world use.
+</p>
+
+
   </motion.div>
   
   {/* 3D Buttons - Mobile optimized */}
@@ -151,7 +152,7 @@ const Hero3D = () => {
       disabled={isTransitioning}
     >
       <span className="flex items-center justify-center">
-        View Personal
+        View Personal Portfolio
         <Palette className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:rotate-12 transition-transform" />
       </span>
     </motion.button>

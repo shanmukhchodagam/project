@@ -173,5 +173,5 @@ const PersonalPortfolio: React.FC = () => {
     </PageTransition>
   );
 };
-
-export default PersonalPortfolio;
+export const working = true;  // Named export
+export default PersonalPortfolio;  // Default export

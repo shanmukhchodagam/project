@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Loader2,Instagram } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -99,9 +99,9 @@ const Contact = () => {
       color: "hover:text-blue-600"
     },
     {
-      icon: <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />,
-      name: "Twitter",
-      url: "https://twitter.com",
+      icon: <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />,
+      name: "Instagram",
+      url: "https://www.instagram.com/shannu_grovees/",
       color: "hover:text-blue-400 "
     }
   ];
