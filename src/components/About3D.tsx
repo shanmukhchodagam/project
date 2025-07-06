@@ -91,7 +91,7 @@ const About3D = () => {
     </p>
 
     <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
-      My journey began in 2021, and since then I've grown from building static websites to developing full-fledged web applications using modern frameworks like React, Angular, and Django. I've worked on real-world projects like M-Cart, a feature-rich e-commerce platform, and internal tools for student and team management.
+      My journey began in 2021, and since then I've grown from building static websites to developing full-fledged web applications using modern frameworks like React, Angular. I've worked on real-world projects like M-Cart, a feature-rich e-commerce platform, and internal tools for student and team management.
     </p>
     <p className="text-gray-800 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg">
       When I'm not building applications, I'm exploring backend systems, improving my problem-solving skills on LeetCode, or learning new tools to stay ahead in the ever-evolving world of web development.

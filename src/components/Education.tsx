@@ -50,7 +50,7 @@ const Education = () => {
       institution: 'Sagi RamaKrishnam Raju Engineering college',
       description: 'pursuving 3rd year.',
       achievements: [
-        'Graduated with First Class',
+        'Graduating',
         'Completed major project in Web Development',
         'Participated in various hackathons and coding competitions'
       ]
