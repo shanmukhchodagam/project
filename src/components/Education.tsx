@@ -48,7 +48,7 @@ const Education = () => {
       year: '2023 - 2027',
       degree: 'B.Tech in Computer Science',
       institution: 'Sagi RamaKrishnam Raju Engineering college',
-      description: 'pursuving 3rd year.',
+      description: 'pursuing 3rd year.',
       achievements: [
         'Graduating',
         'Completed major project in Web Development',
