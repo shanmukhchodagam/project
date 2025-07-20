@@ -12,16 +12,18 @@ const Skills3D = () => {
         { name: "TypeScript", level: 70 },
         { name: "Javascript", level: 85 },
         { name: "Angular", level: 60 },
+        {name:"React-Native",level:70}
       ]
     },
     {
       title: "Backend & Database",
       skills: [
         { name: "Node.js", level: 88 },
-        { name: "Express", level: 85 },
-        { name: "Python", level: 70 },
+        { name: "ExpressJs", level: 85 },
+        { name: "Php", level: 70 },
         { name: "PostgreSQL", level: 82 },
         { name: "MongoDB", level: 70 },
+        { name: "SQl", level: 70 },
       ]
     },
     {
@@ -32,6 +34,7 @@ const Skills3D = () => {
         { name: "puppeteer", level: 70 },
         { name: "taiwindcss", level: 75 },
         { name: "bootstrap", level: 85 },
+        {name:"Android-Studio",level:70}
       ]
     }
   ];

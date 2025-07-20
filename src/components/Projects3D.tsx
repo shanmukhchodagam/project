@@ -7,46 +7,53 @@ import tennis from '../assets/tennis.png';
 import smawash from '../assets/smawash.png';
 import pof from '../assets/pof.png';
 import sigma2k25 from '../assets/sigma2k25.png';
+import expenserImg from '../assets/expenser.jpg';
 
 const Projects3D = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const projects = [
-    {
-    title: "Smart Wash Website",
-    description: "An efficient and eco-friendly laundry & dry cleaning service platform developed for a student-led startup.",
-    longDescription: "Excited to share our work on Smart Wash – a laundry and dry cleaning service startup run by students! As SRKR CSD 2nd-year students, we built this platform to provide users with a seamless, eco-friendly laundry experience. It includes features like scheduling pickups, real-time updates, and a responsive design tailored for ease of use.",
-    image: smawash , // You can replace with a Smart Wash-specific image if available
-    technologies: ["Html", "Css", "Javascript", "Whatsapp integration"],
-    icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
-    github: "#", // Replace with actual GitHub repo if public
-    live: "https://bosmartwash.in/",
-    featured: true,
-    gradient: "from-cyan-500 to-blue-600",
-    duration: "2 months",
-    team: "4 developers",
-    role: "Web Developer",
-    features: [
-      "Pickup scheduling system",
-      "User-friendly responsive design",
-      "Service selection and order tracking",
-      "Contact and feedback section",
-      "Eco-friendly service messaging",
-      "Seamless navigation"
-    ],
-    challenges: [
-      "Integrating order scheduling with a clean UX",
-      "Designing for performance on all devices",
-      "Testing and debugging in live environment"
-    ],
-    results: [
-      "Successfully launched during SRKR campus event",
-      "Positive feedback from early users",
-      "Improved digital visibility for the startup",
-      "Valuable hands-on web dev experience for the team"
-    ]
-  },
+   {
+  title: "EXPENSER – Group Expense Tracker (v1.0)",
+  description: "A mobile app to manage group trips and split expenses efficiently, with smart debt settlement and offline support.",
+  longDescription: "EXPENSER is a cross-platform mobile app built using React Native and TypeScript. Designed for managing group trips, the app allows users to add participants, log expenses, and calculate who owes whom using an optimized debt-settling algorithm. It features offline functionality via AsyncStorage and a modern, animated UI for a smooth experience.",
+  image: expenserImg, // Replace with actual image reference
+  technologies: [
+    "React Native",
+    "TypeScript",
+    "React Navigation",
+    "Context API",
+    "AsyncStorage",
+    "React Native Animatable"
+  ],
+  icon: <Zap className="w-4 h-4 sm:w-6 sm:h-6" />,
+  github: "https://github.com/shanmukhchodagam/EXPENSER", // Replace with actual GitHub repo if available
+  live: "", // Add if hosted or add demo video link
+  featured: true,
+  gradient: "from-indigo-500 to-purple-600",
+  duration: "2 weeks",
+  team: "Solo project",
+  role: "Mobile App Developer",
+  features: [
+    "Trip creation and participant management",
+    "Expense logging with amount and payer info",
+    "Smart debt settlement using greedy algorithm",
+    "Offline storage using AsyncStorage",
+    "Smooth animated UI and intuitive navigation",
+    "Modular, reusable component design"
+  ],
+  challenges: [
+    "Implementing optimal debt calculation logic",
+    "Ensuring accurate state sync across screens",
+    "Designing a responsive and intuitive user interface"
+  ],
+  results: [
+    "Completed core v1.0 features with clean architecture",
+    "Functional cross-platform app for local use",
+    "Demonstrated proficiency in React Native and TypeScript"
+  ]
+},
     {
       title: "Interactive 3D Portfolio",
       description: "A stunning portfolio website featuring 3D animations, particle systems, and immersive storytelling that showcases creative work in an engaging way.",
