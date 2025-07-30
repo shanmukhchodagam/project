@@ -110,8 +110,7 @@ const Experience = () => {
             </h2>
             <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6 sm:mb-8"></div>
             <p className="text-blue-200 max-w-2xl mx-auto text-base sm:text-lg">
-              My journey in web development blends technical expertise with creative problem-solving. From building dynamic e-commerce apps in Angular to contributing to open-source projects with Firebase, I thrive on crafting scalable, user-centric solutions. As a mentor and team collaborator, I enjoy sharing knowledge while pushing the boundaries of modern web tech—whether through live streaming innovation at Bhimavaram Open or designing immersive portfolios with Three.js.
-            </p>
+My journey in web development blends technical expertise with creative problem-solving. From building dynamic, user-friendly applications using the MERN stack to contributing to open-source projects with Firebase, I thrive on crafting scalable, user-centric solutions. As a mentor and team collaborator, I enjoy sharing knowledge while pushing the boundaries of modern web tech—whether through live-streaming innovation at Bhimavaram Open or developing responsive interfaces with React.            </p>
           </motion.div>
           
           <div className="relative">
