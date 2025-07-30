@@ -11,7 +11,7 @@ const Skills3D = () => {
         { name: "html & css", level: 90 },
         { name: "TypeScript", level: 70 },
         { name: "Javascript", level: 85 },
-        { name: "Angular", level: 60 },
+        { name: "Angular", level: 30 },
         {name:"React-Native",level:70}
       ]
     },
@@ -21,9 +21,9 @@ const Skills3D = () => {
         { name: "Node.js", level: 88 },
         { name: "ExpressJs", level: 85 },
         { name: "Php", level: 70 },
-        { name: "PostgreSQL", level: 82 },
+        { name: "PostgreSQL", level: 70 },
         { name: "MongoDB", level: 70 },
-        { name: "SQl", level: 70 },
+        { name: "SQl", level: 75 },
       ]
     },
     {
