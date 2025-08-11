@@ -14,6 +14,18 @@ const Experience = () => {
   const dotY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
  const experiences = [
+   {
+  title: "Full Stack Developer Intern",
+  company: "Kaizen (Learnpath Digital Private Limited)",
+  location: "Remote (Hyderabad office)",
+  duration: "31-07-2025 – Present",
+  description: "Working as a full-time software engineering intern, developing and maintaining full-stack web applications using modern technologies.",
+  achievements: [
+    "Built and optimized features across the frontend and backend",
+    "Collaborated with the team on real-world projects following best coding practices",
+    "Delivered scalable and maintainable solutions while meeting tight deadlines"
+  ]
+},
     {
       title: "Streaming Coordinator",
       company: "Bhimavaram Open",
@@ -25,7 +37,9 @@ const Experience = () => {
         "Facilitated social media engagement and filmed match events",
         "Received honor award for tech support"
       ]
-    },
+    }
+   
+,
     {
       title: "Full Stack Web Developer",
       company: "BO Smart Wash",
@@ -42,7 +56,7 @@ const Experience = () => {
       title: "Web Developer",
       company: "SIGMA fest website",
       location: "SRKR Engineering College",
-      duration: "Not specified",
+      duration: "Bhimavaram AP",
       description: "Created a Squid Game-themed website for the Sigma 2K25 fest, enabling event registrations and showcasing fest highlights.",
       achievements: [
         "Developed the site using HTML, CSS, and JavaScript",
