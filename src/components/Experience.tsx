@@ -18,7 +18,7 @@ const Experience = () => {
   title: "Full Stack Developer Intern",
   company: "Kaizen (Learnpath Digital Private Limited)",
   location: "Remote (Hyderabad office)",
-  duration: "31-07-2025 – Present",
+  duration: "31-07-2025 – 30-11-2025",
   description: "Working as a full-time software engineering intern, developing and maintaining full-stack web applications using modern technologies.",
   achievements: [
     "Built and optimized features across the frontend and backend",
